@@ -35,13 +35,15 @@ import axios from 'axios';
         <div className=" Dashboard row section container ">
             <form onSubmit={this.submitHandler}>
               <div className="input-field col s10  l10  ">
-              <input type="text" placeholder="Search images" value={this.state.term} onChange={this.changeHandler}/>
+              <label htmlFor="image">Enter name to search for images</label>
+              <input id="image" type="text"  value={this.state.term} onChange={this.changeHandler}/>
               </div>
               <div className="input-field col l2  ">
               <button className=" Button waves-effect waves-light btn" >Search</button>
               </div>
             </form>
           </div>
+          
           <Images  images={this.state.images} isLoading={this.state.isLoading}/>
       </div>
     )

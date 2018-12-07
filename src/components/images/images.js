@@ -1,9 +1,7 @@
 import React from 'react';
 
 const images =(props)=>{
-    var imageList = <div className=" image  container section center" >
-    <h5>Search image </h5>
-</div>
+    var imageList = <h5>Images</h5>
 if(props.images ){
     imageList = <div>
     <div class="preloader-wrapper big active container center">
